@@ -98,3 +98,32 @@ Time Complexity: O(n1 + n2).
 
 Space Complexity: O(n1 + n2) for result array.
 
+
+4. Approach: Two-pointer technique use karenge.
+
+Ek pointer (nonZeroPos) rakho jo next non-zero element ke liye position track karega.
+
+Array traverse karo, aur har non-zero element ko nonZeroPos pe daal do, aur nonZeroPos ko aage badhao.
+
+Jab saare non-zero elements apni jagah pe aa jayein, baaki positions (nonZeroPos se end tak) zeros se fill kar do.
+
+Steps:
+
+nonZeroPos = 0 set karo.
+
+Array traverse karo, agar arr[i] != 0 hai, toh arr[nonZeroPos] = arr[i] karo aur nonZeroPos++ karo.
+
+Loop khatam hone ke baad, nonZeroPos se array ke end tak zeros daal do.
+
+Edge Cases:
+
+Agar array empty hai ya single element hai, toh kuch karne ki zarurat nahi.
+
+Agar saare elements zero hain, toh array same rahega.
+
+Agar koi zero nahi hai, toh array same rahega.
+
+Time Complexity: O(n), kyunki ek pass mein non-zero elements move karte hain aur ek pass mein zeros fill karte hain.
+
+Space Complexity: O(1), kyunki in-place kar rahe hain.
+
