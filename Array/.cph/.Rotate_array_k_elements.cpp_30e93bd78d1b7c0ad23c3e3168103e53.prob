@@ -1,0 +1,1 @@
+{"name":"Local: Rotate_array_k_elements","url":"e:\\DSAPractice\\Array\\Rotate_array_k_elements.cpp","tests":[{"id":1747950028295,"input":"5\n1 2 3 4 5\n2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSAPractice\\Array\\Rotate_array_k_elements.cpp","group":"local","local":true}
